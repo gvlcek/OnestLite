@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D3EF91B66834A634D473553 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32D9048C33E316AEF0EE7FC /* Money.swift */; };
+		27DB8644B1F39342856509F1 /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5581D3CAE2721367327CAD /* SharedViews.swift */; };
+		29F00BBBCBA240268A76C0C4 /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B7F230D488FFD2785A495 /* AuthSession.swift */; };
+		2C482B2192AC8F14F8EACF96 /* LoanApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744495FB3716F1E9D80A84A /* LoanApplicationView.swift */; };
+		315DF08C9C9CAE2FC3301A44 /* AuthSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16055983B4D8A755E9B989E1 /* AuthSessionTests.swift */; };
+		32369AD3D86328512E4016D4 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72357783AEAC6B7824B83224 /* TestSupport.swift */; };
+		348478EF170423A1D1E946E7 /* HTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D96B0CAD8419939404308 /* HTTPTransport.swift */; };
+		3561268DEC919AEA73131177 /* OnestLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B22132D83C4A470F8E3B5F /* OnestLiteApp.swift */; };
+		461D33F1C157586CCC7E1E17 /* LoanRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF490585A36143999264F54 /* LoanRepository.swift */; };
+		4F42116774769157FC58B8BA /* KeychainTokenStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B718A00046920B765C5C2C4 /* KeychainTokenStoreTests.swift */; };
+		50C7A356DEDE4C4EB867AB72 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06609BBDC7C39C51CE2A4F45 /* ViewModelTests.swift */; };
+		58CE6450EA08A129DBB7A52D /* LoanDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805A4AD446600F3E121E232 /* LoanDetailViewModel.swift */; };
+		64A994BC933095BCC05333AF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EE32289E91CA4A525A8BE /* LoginViewModel.swift */; };
+		73AD4242BFCE3F7B82790081 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645458FAF1BC7875C0F3072 /* RootView.swift */; };
+		8F077AAB6493CE5AC4EDF35F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F110DE6AD2CA423D0ACCA /* APIError.swift */; };
+		99C1766B02EEB98C19BBE03F /* MockTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25EA23414249BE5052BDCCA /* MockTransport.swift */; };
+		B9E48E95402C5D11E9A696AA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F91AA2A0B48ECDF9BB7488 /* LoginView.swift */; };
+		BB210DA8B915F0059884B9EF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931C0DF4F28ED9594A54068 /* APIClient.swift */; };
+		BDC2FE7B8B8D04F2D99F857C /* LoansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD8A3FDA0F0A1B9B3DFB73 /* LoansView.swift */; };
+		C2E079DC0A526639E50C98CA /* MockBackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858D01683EC68484CC4C73C /* MockBackendTests.swift */; };
+		C5EF98986E77239A610FFA5E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE09912AF8A47EF953CE85D /* Endpoint.swift */; };
+		C9B52BE71240211747169C9D /* LoansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC470EC39C5FF79FBB587B8 /* LoansViewModel.swift */; };
+		CD2D7EE2130628044D6DA418 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659873E163D370CCCA762833 /* TokenStore.swift */; };
+		D0BFF660B31B72626F935C06 /* MockBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A274CD98F8BA43BD2AA3781 /* MockBackend.swift */; };
+		D0C7E266C35F247545C2C227 /* LoanApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94724487AC8ABF277C40F16 /* LoanApplicationViewModel.swift */; };
+		D3A65EB6FD0A0C8A5B5CBF97 /* LoanApplicationValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5A1097CD226FA7E60082B /* LoanApplicationValidatorTests.swift */; };
+		DB940BDC9701ABA3F8ADE64C /* LoanApplicationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998053185934C358093DDBE6 /* LoanApplicationValidator.swift */; };
+		DBE8F9FEA06F22F0419DA47D /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF7845DD74D42DDC1A309E /* AppSession.swift */; };
+		DE7843ABCC1E18114471AB79 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589D337A19A7871A393F494 /* Models.swift */; };
+		E2A8180C2F99CFF5A5CB862D /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865D374089CFE323002E84F8 /* AppEnvironment.swift */; };
+		F238323194C5A93348B55A61 /* LoanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205862B20F6604D3E9238B78 /* LoanDetailView.swift */; };
+		FDA7BAC528656D33A722A267 /* LoanCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773EF5754941FAB85BE473A /* LoanCalculator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07F5878C532D0CF1C083E919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FEBECC885B451BF0A6B67FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59E04BC0F9EFAE68D93619FE;
+			remoteInfo = OnestLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06609BBDC7C39C51CE2A4F45 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		16055983B4D8A755E9B989E1 /* AuthSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSessionTests.swift; sourceTree = "<group>"; };
+		1645458FAF1BC7875C0F3072 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1805A4AD446600F3E121E232 /* LoanDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailViewModel.swift; sourceTree = "<group>"; };
+		1AF490585A36143999264F54 /* LoanRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanRepository.swift; sourceTree = "<group>"; };
+		1F5F110DE6AD2CA423D0ACCA /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		205862B20F6604D3E9238B78 /* LoanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailView.swift; sourceTree = "<group>"; };
+		2589D337A19A7871A393F494 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2CAF7845DD74D42DDC1A309E /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		4B718A00046920B765C5C2C4 /* KeychainTokenStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStoreTests.swift; sourceTree = "<group>"; };
+		5DD5A1097CD226FA7E60082B /* LoanApplicationValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationValidatorTests.swift; sourceTree = "<group>"; };
+		659873E163D370CCCA762833 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		6BE09912AF8A47EF953CE85D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		72357783AEAC6B7824B83224 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		7744495FB3716F1E9D80A84A /* LoanApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationView.swift; sourceTree = "<group>"; };
+		7A274CD98F8BA43BD2AA3781 /* MockBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBackend.swift; sourceTree = "<group>"; };
+		7CC470EC39C5FF79FBB587B8 /* LoansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansViewModel.swift; sourceTree = "<group>"; };
+		83F91AA2A0B48ECDF9BB7488 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		865D374089CFE323002E84F8 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		998053185934C358093DDBE6 /* LoanApplicationValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationValidator.swift; sourceTree = "<group>"; };
+		A773EF5754941FAB85BE473A /* LoanCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculator.swift; sourceTree = "<group>"; };
+		A858D01683EC68484CC4C73C /* MockBackendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBackendTests.swift; sourceTree = "<group>"; };
+		A94724487AC8ABF277C40F16 /* LoanApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanApplicationViewModel.swift; sourceTree = "<group>"; };
+		B32D9048C33E316AEF0EE7FC /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		BDBDDCA28ED2E4900FF5ADDC /* OnestLite.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OnestLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25EA23414249BE5052BDCCA /* MockTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransport.swift; sourceTree = "<group>"; };
+		D4CE78F20A7D245F48890267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D88B7F230D488FFD2785A495 /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
+		E0B22132D83C4A470F8E3B5F /* OnestLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnestLiteApp.swift; sourceTree = "<group>"; };
+		E19D96B0CAD8419939404308 /* HTTPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTransport.swift; sourceTree = "<group>"; };
+		E92EE32289E91CA4A525A8BE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EC5581D3CAE2721367327CAD /* SharedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViews.swift; sourceTree = "<group>"; };
+		F6898C4E18E9BC32E91E66DE /* OnestLiteTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = OnestLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F931C0DF4F28ED9594A54068 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F9AD8A3FDA0F0A1B9B3DFB73 /* LoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		19FC98E04BA7B46B81BA3F1D /* Loans */ = {
+			isa = PBXGroup;
+			children = (
+				F9AD8A3FDA0F0A1B9B3DFB73 /* LoansView.swift */,
+				7CC470EC39C5FF79FBB587B8 /* LoansViewModel.swift */,
+			);
+			path = Loans;
+			sourceTree = "<group>";
+		};
+		206BD4E7FCD880FC3E6313E6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F931C0DF4F28ED9594A54068 /* APIClient.swift */,
+				1F5F110DE6AD2CA423D0ACCA /* APIError.swift */,
+				6BE09912AF8A47EF953CE85D /* Endpoint.swift */,
+				E19D96B0CAD8419939404308 /* HTTPTransport.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		207A3C775F840A1717E68DA4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3878A1C6C962A893BC6F90D4 /* Apply */,
+				23A3B007B66B701E175AB255 /* LoanDetail */,
+				19FC98E04BA7B46B81BA3F1D /* Loans */,
+				924CA91DECB0DAA7C4EFEEB6 /* Login */,
+				502F5F3A7CF2E864453FB3B4 /* Shared */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		23A3B007B66B701E175AB255 /* LoanDetail */ = {
+			isa = PBXGroup;
+			children = (
+				205862B20F6604D3E9238B78 /* LoanDetailView.swift */,
+				1805A4AD446600F3E121E232 /* LoanDetailViewModel.swift */,
+			);
+			path = LoanDetail;
+			sourceTree = "<group>";
+		};
+		37EC38ABB7E1894BF92DC268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDBDDCA28ED2E4900FF5ADDC /* OnestLite.app */,
+				F6898C4E18E9BC32E91E66DE /* OnestLiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3878A1C6C962A893BC6F90D4 /* Apply */ = {
+			isa = PBXGroup;
+			children = (
+				7744495FB3716F1E9D80A84A /* LoanApplicationView.swift */,
+				A94724487AC8ABF277C40F16 /* LoanApplicationViewModel.swift */,
+			);
+			path = Apply;
+			sourceTree = "<group>";
+		};
+		43F3F1666006C8FD95C535CA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D88B7F230D488FFD2785A495 /* AuthSession.swift */,
+				659873E163D370CCCA762833 /* TokenStore.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4E32BA24228027C2240FCB8C = {
+			isa = PBXGroup;
+			children = (
+				ECCC044FBC2304FA8E0179E0 /* OnestLite */,
+				F5730DF11632F343D051E935 /* OnestLiteTests */,
+				37EC38ABB7E1894BF92DC268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		502F5F3A7CF2E864453FB3B4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC5581D3CAE2721367327CAD /* SharedViews.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		54EC610838925888688A3281 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1AF490585A36143999264F54 /* LoanRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6854CA341A2AE6E9468EA5A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				865D374089CFE323002E84F8 /* AppEnvironment.swift */,
+				2CAF7845DD74D42DDC1A309E /* AppSession.swift */,
+				E0B22132D83C4A470F8E3B5F /* OnestLiteApp.swift */,
+				1645458FAF1BC7875C0F3072 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69424BC18F2B1BD6C09F086E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				43F3F1666006C8FD95C535CA /* Auth */,
+				206BD4E7FCD880FC3E6313E6 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		924CA91DECB0DAA7C4EFEEB6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				83F91AA2A0B48ECDF9BB7488 /* LoginView.swift */,
+				E92EE32289E91CA4A525A8BE /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B4E36E6DC554766EF0987934 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				998053185934C358093DDBE6 /* LoanApplicationValidator.swift */,
+				2589D337A19A7871A393F494 /* Models.swift */,
+				B32D9048C33E316AEF0EE7FC /* Money.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E73B3E30C537E7BA17F1AD4C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				72357783AEAC6B7824B83224 /* TestSupport.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		ECCC044FBC2304FA8E0179E0 /* OnestLite */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE78F20A7D245F48890267 /* Info.plist */,
+				6854CA341A2AE6E9468EA5A5 /* App */,
+				69424BC18F2B1BD6C09F086E /* Core */,
+				54EC610838925888688A3281 /* Data */,
+				B4E36E6DC554766EF0987934 /* Domain */,
+				207A3C775F840A1717E68DA4 /* Features */,
+				ED73D89C94446D31211C71BD /* Mock */,
+			);
+			path = OnestLite;
+			sourceTree = "<group>";
+		};
+		ED73D89C94446D31211C71BD /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				A773EF5754941FAB85BE473A /* LoanCalculator.swift */,
+				7A274CD98F8BA43BD2AA3781 /* MockBackend.swift */,
+				C25EA23414249BE5052BDCCA /* MockTransport.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F5730DF11632F343D051E935 /* OnestLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				16055983B4D8A755E9B989E1 /* AuthSessionTests.swift */,
+				4B718A00046920B765C5C2C4 /* KeychainTokenStoreTests.swift */,
+				5DD5A1097CD226FA7E60082B /* LoanApplicationValidatorTests.swift */,
+				A858D01683EC68484CC4C73C /* MockBackendTests.swift */,
+				06609BBDC7C39C51CE2A4F45 /* ViewModelTests.swift */,
+				E73B3E30C537E7BA17F1AD4C /* Support */,
+			);
+			path = OnestLiteTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59E04BC0F9EFAE68D93619FE /* OnestLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEEFE5E1C7043DD4F319E6F4 /* Build configuration list for PBXNativeTarget "OnestLite" */;
+			buildPhases = (
+				8C7C94B63FFACF71D20D236A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnestLite;
+			packageProductDependencies = (
+			);
+			productName = OnestLite;
+			productReference = BDBDDCA28ED2E4900FF5ADDC /* OnestLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDBE5727692650A91E92524 /* OnestLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69C768FE568CBEC564DC420 /* Build configuration list for PBXNativeTarget "OnestLiteTests" */;
+			buildPhases = (
+				AB6C12D24FFC9931B0832FCC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42786C4BFC241C2180D4EA98 /* PBXTargetDependency */,
+			);
+			name = OnestLiteTests;
+			packageProductDependencies = (
+			);
+			productName = OnestLiteTests;
+			productReference = F6898C4E18E9BC32E91E66DE /* OnestLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FEBECC885B451BF0A6B67FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 2B4AAB51BC9233FB4F613EBD /* Build configuration list for PBXProject "OnestLite" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E32BA24228027C2240FCB8C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 37EC38ABB7E1894BF92DC268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59E04BC0F9EFAE68D93619FE /* OnestLite */,
+				CEDBE5727692650A91E92524 /* OnestLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7C94B63FFACF71D20D236A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB210DA8B915F0059884B9EF /* APIClient.swift in Sources */,
+				8F077AAB6493CE5AC4EDF35F /* APIError.swift in Sources */,
+				E2A8180C2F99CFF5A5CB862D /* AppEnvironment.swift in Sources */,
+				DBE8F9FEA06F22F0419DA47D /* AppSession.swift in Sources */,
+				29F00BBBCBA240268A76C0C4 /* AuthSession.swift in Sources */,
+				C5EF98986E77239A610FFA5E /* Endpoint.swift in Sources */,
+				348478EF170423A1D1E946E7 /* HTTPTransport.swift in Sources */,
+				DB940BDC9701ABA3F8ADE64C /* LoanApplicationValidator.swift in Sources */,
+				2C482B2192AC8F14F8EACF96 /* LoanApplicationView.swift in Sources */,
+				D0C7E266C35F247545C2C227 /* LoanApplicationViewModel.swift in Sources */,
+				FDA7BAC528656D33A722A267 /* LoanCalculator.swift in Sources */,
+				F238323194C5A93348B55A61 /* LoanDetailView.swift in Sources */,
+				58CE6450EA08A129DBB7A52D /* LoanDetailViewModel.swift in Sources */,
+				461D33F1C157586CCC7E1E17 /* LoanRepository.swift in Sources */,
+				BDC2FE7B8B8D04F2D99F857C /* LoansView.swift in Sources */,
+				C9B52BE71240211747169C9D /* LoansViewModel.swift in Sources */,
+				B9E48E95402C5D11E9A696AA /* LoginView.swift in Sources */,
+				64A994BC933095BCC05333AF /* LoginViewModel.swift in Sources */,
+				D0BFF660B31B72626F935C06 /* MockBackend.swift in Sources */,
+				99C1766B02EEB98C19BBE03F /* MockTransport.swift in Sources */,
+				DE7843ABCC1E18114471AB79 /* Models.swift in Sources */,
+				0D3EF91B66834A634D473553 /* Money.swift in Sources */,
+				3561268DEC919AEA73131177 /* OnestLiteApp.swift in Sources */,
+				73AD4242BFCE3F7B82790081 /* RootView.swift in Sources */,
+				27DB8644B1F39342856509F1 /* SharedViews.swift in Sources */,
+				CD2D7EE2130628044D6DA418 /* TokenStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6C12D24FFC9931B0832FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315DF08C9C9CAE2FC3301A44 /* AuthSessionTests.swift in Sources */,
+				4F42116774769157FC58B8BA /* KeychainTokenStoreTests.swift in Sources */,
+				D3A65EB6FD0A0C8A5B5CBF97 /* LoanApplicationValidatorTests.swift in Sources */,
+				C2E079DC0A526639E50C98CA /* MockBackendTests.swift in Sources */,
+				32369AD3D86328512E4016D4 /* TestSupport.swift in Sources */,
+				50C7A356DEDE4C4EB867AB72 /* ViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42786C4BFC241C2180D4EA98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59E04BC0F9EFAE68D93619FE /* OnestLite */;
+			targetProxy = 07F5878C532D0CF1C083E919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00FDA03DBAE445064A2FE9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OnestLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onest.OnestLite;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2119E185A12342616A4E1745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onest.OnestLiteTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnestLite.app/OnestLite";
+			};
+			name = Release;
+		};
+		2DCF3E0EA7D20FC8123DEC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onest.OnestLiteTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnestLite.app/OnestLite";
+			};
+			name = Debug;
+		};
+		3BF3F8E6ADD7BAD325A3C038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OnestLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onest.OnestLite;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BB9D1A6BD29A2622102E825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE0C459897CAC55424722B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B4AAB51BC9233FB4F613EBD /* Build configuration list for PBXProject "OnestLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB9D1A6BD29A2622102E825 /* Debug */,
+				CE0C459897CAC55424722B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B69C768FE568CBEC564DC420 /* Build configuration list for PBXNativeTarget "OnestLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCF3E0EA7D20FC8123DEC4E /* Debug */,
+				2119E185A12342616A4E1745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EEEFE5E1C7043DD4F319E6F4 /* Build configuration list for PBXNativeTarget "OnestLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF3F8E6ADD7BAD325A3C038 /* Debug */,
+				00FDA03DBAE445064A2FE9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FEBECC885B451BF0A6B67FB /* Project object */;
+}

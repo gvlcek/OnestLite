@@ -1,0 +1,55 @@
+name: OnestLite
+options:
+  bundleIdPrefix: com.onest
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  OnestLite:
+    type: application
+    platform: iOS
+    sources:
+      - OnestLite
+    info:
+      path: OnestLite/Info.plist
+      properties:
+        CFBundleDisplayName: Onest Lite
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.onest.OnestLite
+        TARGETED_DEVICE_FAMILY: "1,2"
+  OnestLiteTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - OnestLiteTests
+    dependencies:
+      - target: OnestLite
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.onest.OnestLiteTests
+        GENERATE_INFOPLIST_FILE: "YES"
+schemes:
+  OnestLite:
+    build:
+      targets:
+        OnestLite: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - OnestLiteTests
