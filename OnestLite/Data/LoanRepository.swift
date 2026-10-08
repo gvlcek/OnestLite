@@ -41,7 +41,7 @@ struct APILoanRepository: LoanRepository {
         try await client.send(.quote(terms))
     }
 
-    /// Reintenta automáticamente 5xx y fallos de red reusando la misma llave de idempotencia,
+    /// Reintenta de forma automática 5xx y fallos de red reusando la misma llave de idempotencia,
     /// por lo que un reintento después de un 500 (o de una respuesta perdida) es seguro.
     func create(_ terms: LoanTerms, idempotencyKey: String) async throws -> Loan {
         var attempt = 1

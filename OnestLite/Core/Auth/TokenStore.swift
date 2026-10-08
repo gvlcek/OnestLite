@@ -69,7 +69,7 @@ struct KeychainTokenStore: TokenStore {
     }
 }
 
-/// Para pruebas y previews.
+/// Implementación en memoria para pruebas y previews.
 final class InMemoryTokenStore: TokenStore, @unchecked Sendable {
     private let lock = NSLock()
     private var session: StoredSession?

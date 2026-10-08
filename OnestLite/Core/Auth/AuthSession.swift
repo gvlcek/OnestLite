@@ -83,7 +83,8 @@ actor AuthSession: AuthRepository {
     func refreshedAccessToken(replacing stale: String) async throws -> String {
         guard let current = try store.load() else { throw APIError.notAuthenticated }
         if current.accessToken != stale { return current.accessToken }
-        if let refreshTask { return try await refreshTask.value.accessToken }
+        // Si hay una renovación en curso pero fue cancelada (p. ej. por logout), no la reutilizamos.
+        if let refreshTask, refreshTask.isCancelled { return try await refreshTask.value.accessToken }
 
         let refreshToken = current.refreshToken
         let startEpoch = epoch

@@ -1,6 +1,6 @@
 import Foundation
 
-/// Cliente autenticado: agrega el access token, y si el servidor responde 401 renueva la sesión
+/// Cliente autenticado: agrega el access token y, si el servidor responde 401, renueva la sesión
 /// (una sola vez para todas las peticiones concurrentes) y reintenta la petición original.
 final class APIClient: Sendable {
     private let baseURL: URL
